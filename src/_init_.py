@@ -36,7 +36,7 @@ DEBUG = False
 
 
 
-# ROLES FILTER
+# SYNTACTIC RELATIONS FILTER
 syntactic_relations = {"all":["sbj-1", "obj-1", 'pmod+loc', 'pmod+with', 'pmod+on', 'pmod+in', 'pmod+at'], "pred":["sbj-1", "obj-1"], "compl":['pmod+with', 'pmod+on', 'pmod+in', 'pmod+at']}
 
 
@@ -77,12 +77,16 @@ for matrix in matrix_files:
 
                 proto_mat[target] = temp
 
+            # FOR EVERY TYPE OF CONTEXTS, CALCULATE SIMILARITY BETWEEN PROTOYPE AND CANDIDATE
             for type_of_contexts in syntactic_relations.keys():
                 
-                gold, cos, APSyn_500, APSyn_1000, APSyn_1500, APSyn_2000 = calculate_dataset(dataset, proto_mat, dsm, roles_to_be_considered[type_of_contexts])
+                gold, cos, APSyn_500, APSyn_1000, APSyn_1500, APSyn_2000 = calculate_dataset(dataset, proto_mat, dsm, syntactic_relations[type_of_contexts])
 
                 
                 output.write(matrix + "\t" + dataset_file + "\t" + str(number_of_fillers) + "\t" + type_of_contexts + "\t" + str(stats.spearmanr(gold, cos)) + "\t" + str(stats.spearmanr(gold, APSyn_500)) + "\t" + str(stats.spearmanr(gold, APSyn_1000)) + "\t" + str(stats.spearmanr(gold, APSyn_1500)) + "\t" + str(stats.spearmanr(gold, APSyn_2000)))
 
+
+
+# CLOSING THE OUTPUT FILE
 output.close()
         
