@@ -1,6 +1,6 @@
 In this directory you need to save the datasets McRae, Pado', Ferretti Instrument and Ferretti Locations. The former two can be also present in the split forms, each of which containing only entries related to a specific semantic role (syntactic relation): McRae-Agent/Sbj, McRae-Patient/Obj and Pado-Agent/Sbj, Pado-Patient/Obj.
 
-McRae can be found at https://sites.google.com/site/kenmcraelab/norms-data/thematic_fit_ratings_McRae.xlsx?attredirects=0 and it must preprocessed in the form:
+McRae can be found at [McRae Dataset](https://sites.google.com/site/kenmcraelab/norms-data/thematic_fit_ratings_McRae.xlsx?attredirects=0) and it must preprocessed in the form:
 
 	abandon-v_sbj	baby-n	3.0
 	abandon-v_sbj	cat-n	4.6
