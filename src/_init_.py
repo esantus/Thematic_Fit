@@ -1,21 +1,11 @@
-# LOADING LIBRARIES
+# SET DEBUG TO TRUE IF YOU WANT TO SEE PRINTED ALL THE STEPS
+DEBUG = False
 
-import sys, codecs, os, gzip, re, pickle
 
-from composes.semantic_space.space import Space
-from composes.transformation.scaling.ppmi_weighting import PpmiWeighting, PlmiWeighting
-from composes.similarity.cos import CosSimilarity
-from composes.matrix.sparse_matrix import SparseMatrix
-from composes.utils import io_utils
 
-from scipy import spatial
-from scipy import stats
-import scipy.sparse
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
-import itertools as itertools
+# IMPORTING THE LOCAL LIBRARY
 
-from collections import defaultdict
+from functions import *
 
 
 
@@ -28,11 +18,6 @@ filler_file = "../top_fillers/top_fillers.txt"
 matrix_files = ["ukbnc1000_PPMI", "ukbnc1000_PLMI"]
 dataset_files = ["mcrae.txt", "pado.txt", "instrum_ferretti.txt","locat_ferretti.txt", "obj_pado.txt", "sbj_pado.txt", "obj_mcrae.txt", "sbj_mcrae.txt"] 
 output_file = "../results/output.txt"
-
-
-
-# SET DEBUG TO TRUE IF YOU WANT TO SEE PRINTED ALL THE STEPS
-DEBUG = False
 
 
 

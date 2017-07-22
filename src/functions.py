@@ -1,3 +1,24 @@
+# LOADING LIBRARIES
+
+import sys, codecs, os, gzip, re, pickle
+
+from composes.semantic_space.space import Space
+from composes.transformation.scaling.ppmi_weighting import PpmiWeighting, PlmiWeighting
+from composes.similarity.cos import CosSimilarity
+from composes.matrix.sparse_matrix import SparseMatrix
+from composes.utils import io_utils
+
+from scipy import spatial
+from scipy import stats
+import scipy.sparse
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+import itertools as itertools
+
+from collections import defaultdict
+
+
+
 def get_vec(target, dsm):
     
     if is_context(target) == True:
