@@ -32,7 +32,7 @@ Pado' can be found at [Pado' Homepage](https://nlpado.de/~ulrike/data.html), and
 	eliminate-v_obj	job-n	5.0
 
 
-Ferretti, Instrument and Locations, can be requested to the [author](tferrett@cogsci.ucsd.edu), and they must be preprocessed in the form:
+Ferretti, Instrument and Locations, can be requested to the [author](mailto:tferrett@cogsci.ucsd.edu), and they must be preprocessed in the form:
 
 	(Instruments)
 	serve-v_pmod+with	plate-n	5.9
