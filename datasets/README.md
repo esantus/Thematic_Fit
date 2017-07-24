@@ -1,6 +1,6 @@
 In this directory you need to save the datasets McRae, Pado', Ferretti Instrument and Ferretti Locations. The former two can be also present in the split forms, each of which containing only entries related to a specific semantic role (syntactic relation): McRae-Agent/Sbj, McRae-Patient/Obj and Pado-Agent/Sbj, Pado-Patient/Obj.
 
-McRae can be found at [McRae Dataset](https://sites.google.com/site/kenmcraelab/norms-data/thematic_fit_ratings_McRae.xlsx?attredirects=0) and it must preprocessed in the form:
+McRae can be found at [McRae Dataset](https://sites.google.com/site/kenmcraelab/norms-data/thematic_fit_ratings_McRae.xlsx?attredirects=0), and it must preprocessed in the form:
 
 	abandon-v_sbj	baby-n	3.0
 	abandon-v_sbj	cat-n	4.6
@@ -16,7 +16,7 @@ McRae can be found at [McRae Dataset](https://sites.google.com/site/kenmcraelab/
 	write-v_obj	story-n	6.2
 
 
-Pado' canbe found at [] and it must be preprocessed in the form:
+Pado' can be found at [Pado' Homepage](https://nlpado.de/~ulrike/data.html), and it must be preprocessed in the form:
 
 	advise-v_sbj	banker-n	6.0
 	advise-v_sbj	biologist-n	5.0
@@ -32,7 +32,7 @@ Pado' canbe found at [] and it must be preprocessed in the form:
 	eliminate-v_obj	job-n	5.0
 
 
-Ferretti - Instrument and Ferretti Locations can be found at [] and they must be preprocessed in the form:
+Ferretti, Instrument and Locations, can be requested to the [author](tferrett@cogsci.ucsd.edu), and they must be preprocessed in the form:
 
 	(Instruments)
 	serve-v_pmod+with	plate-n	5.9
